@@ -10,6 +10,14 @@ function SlideShow() {
     var controller: number = 0;
     const images = [Image_1, Image_2, Image_3];
     const [imageShowed, setImageShowed] = useState(images[controller]);
+    const titles = ["Los Angeles", "New York", "Chicago"];
+    const [titleShowed, setTitleShowed] = useState(titles[controller]);
+    const describes = [
+        "We had the best time playing at Venice Beach!",
+        "The atmosphere in New York is lorem ipsum.",
+        "Thank you, Chicago - A night we won't forget.",
+    ];
+    const [describeShowed, setDescribeShowed] = useState(describes[controller]);
 
     useEffect(() => {
         carousel();
@@ -24,6 +32,8 @@ function SlideShow() {
         }
 
         setImageShowed(images[controller]);
+        setTitleShowed(titles[controller]);
+        setDescribeShowed(describes[controller]);
 
         setTimeout(() => {
             carousel();
@@ -32,7 +42,9 @@ function SlideShow() {
 
     return (
         <div className={styles.container}>
-            <img src={imageShowed} alt="" />
+            <img src={imageShowed} alt="Slideshow with images of shows and guitar" />
+            <h3>{titleShowed}</h3>
+            <span>{describeShowed}</span>
         </div>
     );
 }
