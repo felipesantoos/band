@@ -20,15 +20,15 @@ function Header() {
     return (
         <header className={styles.container}>
             <ul>
-                <li>Home</li>
-                <li>Band</li>
-                <li>Tuor</li>
-                <li>Contact</li>
+                <li>HOME</li>
+                <li>BAND</li>
+                <li>TOUR</li>
+                <li>CONTACT</li>
                 <li 
                     onMouseEnter={() => moreOnMouseEnter()} 
                     onMouseLeave={() => moreOnMouseLeave()}
                 >
-                    <span>More</span>
+                    <span>MORE</span>
                     <div id="moreOptions" className={styles.moreOptions}>
                         <ul>
                             <li>Merchandise</li>
