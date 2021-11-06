@@ -1,0 +1,28 @@
+.container {
+    padding: 4rem 4rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .iconsGroup {
+        margin-bottom: 1rem;
+
+        display: flex;
+        justify-content: center;
+
+        svg {
+            fill: grey;
+            font-size: 1.5rem;
+        }
+    }
+
+    span {
+        font-size: 0.9rem;
+        color: grey;
+
+        a {
+            color: grey;
+        }
+    }
+}
