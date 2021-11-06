@@ -27,18 +27,18 @@ function Describe() {
             <div className={styles.membersGroup}>
                 <MemberCard
                     name="Jimi Foreman"
-                    src={Image_4}
-                    alt="Jimi Foreman photo"
+                    imgSrc={Image_4}
+                    imgAlt="Jimi Foreman photo"
                 />
                 <MemberCard
                     name="Yasin Moran"
-                    src={Image_5}
-                    alt="Yasin Moran photo"
+                    imgSrc={Image_5}
+                    imgAlt="Yasin Moran photo"
                 />
                 <MemberCard
                     name="Neha Dupont"
-                    src={Image_6}
-                    alt="Jimi Foreman photo"
+                    imgSrc={Image_6}
+                    imgAlt="Neha Dupont photo"
                 />
             </div>
         </div>

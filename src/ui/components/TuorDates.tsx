@@ -15,37 +15,37 @@ function TuorDates() {
                 <Tickets
                     mounth="September"
                     quantity="Sold out"
-                    classQuantity="soldOut"
+                    quantityClass="soldOut"
                 />
                 <Tickets
                     mounth="October"
                     quantity="Sold out"
-                    classQuantity="soldOut"
+                    quantityClass="soldOut"
                 />
                 <Tickets
                     mounth="November"
                     quantity="3"
-                    classQuantity="number"
+                    quantityClass="number"
                 />
             </div>
             <div className={styles.showLocationGroup}>
                 <ShowLocation
                     imgSrc={Image_7}
-                    imgAlt=""
+                    imgAlt="New York photo"
                     local="New York"
                     date="Fri 27 Nov 2016"
                     describe="Praesent tincidunt sed tellus ut rutrum sed vitae justo."
                 />
                 <ShowLocation
                     imgSrc={Image_8}
-                    imgAlt=""
+                    imgAlt="Paris photo"
                     local="Paris"
                     date="Sat 28 Nov 2016"
                     describe="Praesent tincidunt sed tellus ut rutrum sed vitae justo."
                 />
                 <ShowLocation
                     imgSrc={Image_9}
-                    imgAlt=""
+                    imgAlt="San Francisco photo"
                     local="San Francisco"
                     date="Sat 29 Nov 2016"
                     describe="Praesent tincidunt sed tellus ut rutrum sed vitae justo."

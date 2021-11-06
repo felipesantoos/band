@@ -2,15 +2,15 @@ import styles from "../styles/components/MemberCard.module.scss";
 
 interface MemberCardProps {
     name: string;
-    src: string;
-    alt: string;
+    imgSrc: string;
+    imgAlt: string;
 }
 
-function MemberCard({ name, src, alt }: MemberCardProps) {
+function MemberCard({ name, imgSrc, imgAlt }: MemberCardProps) {
     return (
         <div className={styles.container}>
             <span>{name}</span>
-            <img src={src} alt={alt} />
+            <img src={imgSrc} alt={imgAlt} />
         </div>
     );
 }

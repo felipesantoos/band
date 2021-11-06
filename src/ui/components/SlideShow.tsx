@@ -42,7 +42,10 @@ function SlideShow() {
 
     return (
         <div className={styles.container}>
-            <img src={imageShowed} alt="Slideshow with images of shows and guitar" />
+            <img 
+                src={imageShowed} 
+                alt="Slideshow with images of shows and guitar"
+            />
             <h3>{titleShowed}</h3>
             <span>{describeShowed}</span>
         </div>
