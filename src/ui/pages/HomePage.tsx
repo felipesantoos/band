@@ -4,6 +4,7 @@ import Describe from "../components/Describe";
 import TuorDates from "../components/TuorDates";
 
 import styles from "../styles/pages/HomePage.module.scss";
+import ContactForm from "../components/ContactForm";
 
 function HomePage() {
     return (
@@ -12,6 +13,7 @@ function HomePage() {
             <SlideShow />
             <Describe />
             <TuorDates />
+            <ContactForm />
         </div>
     );
 }
