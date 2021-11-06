@@ -15,8 +15,8 @@
 
         display: inline-block;
 
-        font-size: 0.9rem;
         color: grey;
+        font-size: 0.9rem;
         font-style: italic;
     }
 
@@ -32,20 +32,5 @@
 
         display: flex;
         justify-content: space-evenly;
-
-        div {
-            display: flex;
-            flex-direction: column;
-
-            span {
-                margin-bottom: 0.5rem;
-            }
-
-            img {
-                height: 250px;
-                width: 200px;
-                object-fit: cover;
-            }
-        }    
     }
 }

@@ -20,10 +20,18 @@ function Header() {
     return (
         <header className={styles.container}>
             <ul>
-                <li>HOME</li>
-                <li>BAND</li>
-                <li>TOUR</li>
-                <li>CONTACT</li>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">BAND</a>
+                </li>
+                <li>
+                    <a href="#">TOUR</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
                 <li 
                     onMouseEnter={() => moreOnMouseEnter()} 
                     onMouseLeave={() => moreOnMouseLeave()}
@@ -31,9 +39,15 @@ function Header() {
                     <span>MORE</span>
                     <div id="moreOptions" className={styles.moreOptions}>
                         <ul>
-                            <li>Merchandise</li>
-                            <li>Extra</li>
-                            <li>Media</li>
+                            <li>
+                                <a href="#">Merchandise</a>
+                            </li>
+                            <li>
+                                <a href="#">Extra</a>
+                            </li>
+                            <li>
+                                <a href="#">Media</a>
+                            </li>
                         </ul>
                     </div>
                 </li>

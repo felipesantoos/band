@@ -3,6 +3,7 @@ import SlideShow from "../components/SlideShow";
 import Describe from "../components/Describe";
 
 import styles from "../styles/pages/HomePage.module.scss";
+import TuorDates from "../components/TuorDates";
 
 function HomePage() {
     return (
@@ -10,6 +11,7 @@ function HomePage() {
             <Header />
             <SlideShow />
             <Describe />
+            <TuorDates />
         </div>
     );
 }
