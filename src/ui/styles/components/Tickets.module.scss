@@ -32,3 +32,9 @@
         border-radius: 50%;
     }
 }
+
+@media (max-width: 615px) {
+    .container {
+        margin: auto 2rem;
+    }
+}

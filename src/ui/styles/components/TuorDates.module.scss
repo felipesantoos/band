@@ -1,8 +1,9 @@
 .container {
-    padding: 5rem 18rem;
+    height: 850px;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     color: white;
@@ -24,13 +25,24 @@
 
     .ticketsGroup {
         width: 100%;
+        max-width: 850px;
         margin-top: 2rem;
     }
 
-    div.showLocationGroup {
+    .showLocationGroup {
+        max-width: 850px;
         margin-top: 2rem;
 
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media (max-width: 615px) {
+    .container {
+        height: 1700px;
+    }
+    .showLocationGroup {
+        flex-direction: column;
     }
 }

@@ -37,3 +37,14 @@
         }
     }
 }
+
+@media (max-width: 615px) {
+    .container {
+        margin: auto 2rem 1rem;
+
+        &:not(:last-of-type) {
+            margin-right: 0;
+            margin: auto 2rem 1.5rem;
+        }
+    }
+}
