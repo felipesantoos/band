@@ -1,5 +1,7 @@
 .container {
-    height: 850px;
+    margin-top: 5rem;
+    height: fit-content;
+    padding: 5rem 1rem;
 
     display: flex;
     flex-direction: column;
@@ -40,7 +42,8 @@
 
 @media (max-width: 615px) {
     .container {
-        height: 1700px;
+        height: fit-content;
+        padding: 5rem 0;
     }
     .showLocationGroup {
         flex-direction: column;

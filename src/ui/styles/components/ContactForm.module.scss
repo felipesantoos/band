@@ -1,8 +1,11 @@
 .container {
-    padding: 5rem 18rem;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 5rem 1rem;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     h3 {
@@ -28,6 +31,8 @@
         justify-content: space-between;
 
         .contactInfo {
+            min-width: 250px;
+
             div {
                 margin-bottom: 0.5rem;
             }
@@ -38,14 +43,21 @@
         }
 
         .contactForm {
+            width: 100%;
+
             form {
+                width: 100%;
                 display: flex;
                 flex-direction: column;
 
                 div {
+                    display: flex;
+
+                    width: 100%;
                     margin-bottom: 0.5rem;
 
                     input {
+                        width: 100%;
                         &:not(:last-of-type) {
                             margin-right: 1rem;
                         }
@@ -58,6 +70,31 @@
 
                 button {
                     align-self: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 615px) {
+    .contactGroup {
+        display: flex;
+        flex-direction: column;
+
+        .contactForm {
+            form {
+                div {
+                    display: flex;
+                    flex-direction: column;
+
+                    input {
+                        width: calc(100% - 1.65rem) !important;
+                        margin-right: 0px !important;          
+                        &:not(:last-of-type) {
+                            margin-top: 1rem;
+                            margin-bottom: 0.5rem;
+                        }
+                    }
                 }
             }
         }

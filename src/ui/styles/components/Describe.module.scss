@@ -1,5 +1,6 @@
 .container {
-    height: 850px;
+    margin-top: 7rem;
+    height: fit-content;
     padding: 5rem auto;
 
     display: flex;
@@ -45,7 +46,8 @@
 
 @media (max-width: 615px) {
     .container {
-        height: 1700px
+        margin-top: 7rem;
+        height: max-content;
     }
     .membersGroup {
         margin-bottom: 1rem;

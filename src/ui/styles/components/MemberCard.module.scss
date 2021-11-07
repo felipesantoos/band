@@ -20,5 +20,11 @@
 @media (max-width: 615px) {
     .container {
         margin: auto 1.5rem 0.75rem;
+        
+        img {
+            align-self: center;
+            height: 350px;
+            max-width: 300px;
+        }
     }
 }
