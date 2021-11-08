@@ -8,7 +8,7 @@ import Input from "./Input";
 
 function ContactForm() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="contact">
             <h3>CONTACT</h3>
             <span>Fan? Drop a note!</span>
             <div className={styles.contactGroup}>

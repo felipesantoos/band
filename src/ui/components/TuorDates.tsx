@@ -28,7 +28,7 @@ function TuorDates() {
                     quantityClass="number"
                 />
             </div>
-            <div className={styles.showLocationGroup}>
+            <div className={styles.showLocationGroup} id="tour">
                 <ShowLocation
                     imgSrc={Image_7}
                     imgAlt="New York photo"

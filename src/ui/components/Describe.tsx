@@ -7,7 +7,7 @@ import MemberCard from "./MemberCard";
 
 function Describe() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="band">
             <h3>THE BAND</h3>
             <span>We love music</span>
             <p>

@@ -1,9 +1,6 @@
 .container {
     width: 100%;
 
-    display: flex;
-    justify-content: space-between;
-
     position: fixed;
     top: 0;
     z-index: 1;
@@ -14,72 +11,168 @@
 
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 
-    ul {
-        display: flex;
+    user-select: none;
 
-        > li {
+    .collapsed {
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+
+        > svg {
             padding: 1rem 1.5rem;
+            fill: white;
+            font-size: 1rem;
 
-            position: relative;
-            
-            list-style: none;
-            color: white;
-            background-color: rgb(30, 30, 30);
-            
             cursor: pointer;
 
             &:hover {
-                color: black;
+                fill: black;
                 background-color: rgb(220, 220, 220);
             }
+        }
 
-            .moreOptions {
-                min-width: 150px;
+        button {
+            padding: 1rem 1.5rem;
 
-                position: absolute;
-                left: 0;
-                top: 3rem;
+            background-color: rgb(30, 30, 30);
 
-                display: none;
+            border: none;
 
-                font-weight: normal;
+            cursor: pointer;
 
-                box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+            &:hover {
+                background-color: crimson;
+            }
 
-                ul {
-                    display: flex;
-                    flex-direction: column;
+            svg {
+                fill: white;
+            }
+        }
+    }
 
-                    li {
-                        padding: 0.75rem 1.25rem;
+    .expanded {
+        width: 100%;
 
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+
+            > li {
+                position: relative;
+
+                list-style: none;
+                color: white;
+                background-color: rgb(30, 30, 30);
+
+                cursor: pointer;
+
+                &:hover {
+                    color: black;
+                    background-color: rgb(220, 220, 220);
+
+                    a {
                         color: black;
-                        background-color:white;
-                        
-                        &:hover {
-                            background-color: rgb(220, 220, 220);
+                    }
+                }
+
+                a {
+                    padding: 1rem 1.5rem;
+
+                    display: flex;
+
+                    color: white;
+                    text-decoration: none;
+                }
+
+                span {
+                    padding: 1rem 1.5rem;
+
+                    display: inline-block;
+                }
+
+                .moreOptions {
+                    span {
+                        color: red;
+                    }
+                    min-width: 150px;
+
+                    position: absolute;
+                    left: 0;
+                    top: 3rem;
+
+                    display: none;
+
+                    font-weight: normal;
+
+                    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+
+                        li {
+                            padding: 0.75rem 1.25rem;
+
+                            color: black;
+                            background-color: white;
+
+                            &:hover {
+                                background-color: rgb(220, 220, 220);
+                            }
                         }
                     }
                 }
             }
         }
+
+        button {
+            padding: 1rem 1.5rem;
+
+            background-color: rgb(30, 30, 30);
+
+            border: none;
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: crimson;
+            }
+
+            svg {
+                fill: white;
+            }
+        }
     }
+}
 
-    button {
-        padding: 1rem 1.5rem;
+@media (max-width: 615px) {
+    .container {
+        flex-direction: column;
 
-        background-color:rgb(30, 30, 30);
-
-        border: none;
-
-        cursor: pointer;
-
-        &:hover {
-            background-color:crimson;
+        .collapsed {
+            display: flex;
         }
 
-        svg {
-            fill: white;
+        .expanded {
+            display: none;
+            flex-direction: column;
+            
+            ul {
+                flex-direction: column;
+                
+                li {
+                    .moreOptions {
+                        width: 100%;
+                        top: 2.88rem;
+                    }
+                }
+            }
+
+            button {
+                display: none;
+            }
         }
     }
 }
